@@ -6,5 +6,5 @@ import retrofit2.http.GET
 
 interface NationService {
     @GET("v3.1/all?fields=name,flags")
-    suspend fun fetchRecipes(): Response<List<Country>>
+    suspend fun fetchCountry(): Response<List<Country>>
 }

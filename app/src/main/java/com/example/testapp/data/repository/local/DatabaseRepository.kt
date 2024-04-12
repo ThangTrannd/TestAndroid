@@ -6,5 +6,5 @@ import kotlinx.coroutines.flow.Flow
 interface DatabaseRepository {
     suspend fun saveData(list : List<Country>)
 
-    fun readData() : Flow<List<Country>>
+    fun readData() : List<Country>
 }

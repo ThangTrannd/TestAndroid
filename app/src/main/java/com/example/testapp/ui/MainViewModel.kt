@@ -23,7 +23,6 @@ class MainViewModel @Inject constructor(val dataRepository: DataRepository,val d
             dataRepository.fetchItem().collect { items ->
                 _nationalState.value = items
                 items.let {
-                    println("Thắng check")
                     databaseRepository.saveData(it)
                 }
             }
